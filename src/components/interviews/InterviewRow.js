@@ -19,6 +19,12 @@ function InterviewRow({ interview }) {
           <td>
             <Link to={`${url}/${interview.id}`}>show</Link>
           </td>
+          <td>
+            <Link to={`${url}/${interview.id}/edit`}>edit</Link>
+          </td>
+          <td>
+            <Link to={`${url}/${interview.id}/delete`}>delete</Link>
+          </td>
         </tr>
       </tbody>
     </>

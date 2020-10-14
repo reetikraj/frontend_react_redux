@@ -5,22 +5,22 @@ export const FETCH_INTERVIEWS_FAILURE = "FETCH_INTERVIEWS_FAILURE"
 export const fetchInterviewsRequest = () => {
   return {
     type: FETCH_INTERVIEWS_REQUEST,
-  };
-};
+  }
+}
 
 export const fetchInterviewsSuccess = (interviews) => {
   return {
     type: FETCH_INTERVIEWS_SUCCESS,
     payload: interviews,
-  };
-};
+  }
+}
 
 export const fetchInterviewsFailure = (error) => {
   return {
     type: FETCH_INTERVIEWS_FAILURE,
     payload: error,
-  };
-};
+  }
+}
 
 export const fetchInterviews = () => {
   return async (dispatch) => {
